@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowCart Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">GlowCart</div>
+        <nav>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+        </nav>
+        <button class="cart-button" id="openCartBtn">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Free store starter</p>
+            <h1>Beautiful products, simple checkout.</h1>
+            <p>
+              A modern storefront built to be hosted for free on GitHub Pages.
+            </p>
+            <div class="hero-actions">
+              <a href="#products" class="primary-btn">Shop Now</a>
+              <a href="#about" class="secondary-btn">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="mini-card">
+              <span>Hot deal</span>
+              <h3>Starter Bundle</h3>
+              <p>Save 20% on your first order</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <div class="container">
+          <div class="section-header">
+            <p>Featured Items</p>
+            <h2>Best Sellers</h2>
+          </div>
+
+          <div id="productGrid" class="product-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-box">
+          <div>
+            <p class="eyebrow">Why this works</p>
+            <h2>Free hosting, easy setup.</h2>
+          </div>
+          <p>
+            This storefront is a static website. It can be hosted for free on GitHub Pages.
+            Add your own products, modify the cart, and link checkout to WhatsApp or PayPal.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="closeCartBtn" class="close-btn">✕</button>
+      </div>
+
+      <div id="cartItems" class="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
